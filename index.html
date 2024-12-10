@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>latihan peta</title> <!-- Judul pada tab browser -->
+  <link rel="stylesheet" href="styles.css"> <!-- Opsional -->
+</head>
+<body>
+  <h1 style="text-align: center; margin-top: 20px;">Judul Peta Saya</h1> <!-- Judul di halaman -->
+  <div id="map" style="height: 500px; width: 100%;"></div>
+
+  <script src="leaflet.js"></script> <!-- File JavaScript Leaflet -->
+  <script>
+    // Contoh inisialisasi peta menggunakan Leaflet
+    var map = L.map('map').setView([51.505, -0.09], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19
+    }).addTo(map);
+  </script>
+</body>
+</html>
 <!doctype html>
 <html lang="en">
     <head>
